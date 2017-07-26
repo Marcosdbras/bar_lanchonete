@@ -1,0 +1,1494 @@
+html, body{
+	height: 100%;	
+}
+body{
+	background:#565555;
+	overflow:hidden;
+	margin:0px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+/* Importar Fonte */
+@font-face {
+	font-family: "DIGIFACE";
+	src: url("../fonts/DIGIFACE.TTF");
+}
+
+/* ---------------------------------------------------------------------- */
+/*	GRIDE HIDE
+/* ---------------------------------------------------------------------- */
+#produtos_lanches{
+	
+}
+
+#produtos_bebidas{
+	display:none;
+}
+
+#produtos_porcoes{
+	display:none;
+}
+#produtos_kits{
+	display:none;
+}
+#produtos_adicionais{
+	display:none;
+}
+#produtos_entrega{
+	display:none;
+}
+
+/*****************/
+
+#lista_produtos{
+	
+}
+
+#lista_clientes{
+	display:none;
+}
+
+#lista_mesas{
+	display:none;
+}
+
+#ver_historico_cliente{
+	display:none;
+}
+
+#pedidos_em_aberto{
+	display:none;
+}
+#fechar_pedido{
+	display:none;
+}
+
+/*****************/
+
+#clientes_listar{
+	
+}
+
+#clientes_cadastrar{
+	display:none;
+}
+
+/*****************/
+
+#receber_total{
+	
+}
+#devolver_troco{
+	display:none;
+}
+#fechar_caixa{
+	display:none;
+}
+#imprimir_cozinha{
+	//display:none;
+}
+#imprimir_senha{
+	display:none;
+}
+#imprimir_cupom{
+	display:none;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	SCROLL BAR
+/* ---------------------------------------------------------------------- */
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-button {
+	width: 8px;
+	height:2px;
+}
+::-webkit-scrollbar-track {
+	background:#e0e7ea;
+	border: skinny plain lightgray;
+	box-shadow: 0px 0px 3px #dfdfdf inset;
+}
+::-webkit-scrollbar-thumb {
+	background:#9bc1cf;
+	border: skinny plain gray;
+}
+::-webkit-scrollbar-thumb:hover {
+	background:#8eb0bd;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	GRID
+/* ---------------------------------------------------------------------- */
+.menu_topo_pdv{
+	width:100%;
+	height:40px;
+	//margin-bottom:10px;
+	background-color:#fff;
+	display:none;
+}
+.body{
+	min-width:1000px;
+}
+
+.col_1{
+	width:400px;
+	float:left;
+}
+.col_1_row_1{
+	height:50px;
+	background-color:#8eb0bd;
+	background-image:url(../img/icon_cliente_menor.png);
+	background-repeat:no-repeat;
+}
+.col_1_row_1_5{
+	height:30px;
+	background-color:#8eb0bd;
+	color:#eee;
+	padding:0 0 0 10px;
+}
+.col_1_row_1_5 input{
+	border:0px;
+	padding:4px;
+	width:342px;
+}
+.col_1_row_2{
+	height:80px;
+	background-color:#9bc1cf;
+	display:none;
+}
+.col_1_row_3{
+	height:auto;
+	background-color:#e0e7ea;
+}
+.col_1_row_4{
+	height:70px;
+	background-color:#8eb0bd;
+}
+
+.col_2{
+	width: calc(100% - 400px);
+	min-width:590px;
+	float:right;
+}
+.col_2_row_11{
+	padding:0px 0px 0px 0px;
+	height:50px;
+	background-color:#87949A;
+}
+.col_2_row_1{
+	//padding:0px 5px 0px 0px;
+	height:80px;
+	background-color:#E5E5E5;
+	overflow:hidden;
+}
+.col_2_row_2{
+	height:auto;
+	background-color:#D3D3D3;
+	overflow: auto;
+	overflow-x: hidden;
+}
+.col_2_row_21{
+	height:auto;
+	background-color:#D3D3D3;
+	overflow: auto;
+}
+.col_2_row_3{
+	height:70px;
+	background-color:#87949A;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/*	Layout TOPO
+/* ---------------------------------------------------------------------- */
+
+#menu_topo{	/* Barra preta topo */
+	height:40px;
+	padding:0px 30px;
+	background-color:#565555;
+	color:#fff;
+}
+#menu_topo_left{
+	height:30px;
+	padding-top:7px;
+	text-align: center;
+}
+#data_menu_topo{
+	margin-left:50px;
+}
+
+#nome_menu_topo{
+	font-size:24px;
+}
+
+#data_menu_topo{
+	padding-top:12px;
+	text-align: right;
+	position: absolute;
+	right: 20px;
+	bottom: 17px;
+	text-align:center;
+	color:#fff;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Layout COLULA 2 PESQUISA Produto
+/* ---------------------------------------------------------------------- */
+#pesquisa_produtos{
+	height:40px;
+	padding:8px 15px 0px 15px;
+	float:right;
+	text-align:right;
+	text-align:center;
+	color:#fff;
+	font-size:20px;
+}
+#pesquisa_produtos input{
+	border:0px;
+	width:225px;
+	padding: 9px 8px 7px 8px;
+	font-size:16px;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Layout COLULA 2 PESQUISA Cliente
+/* ---------------------------------------------------------------------- */
+#pesquisa_clientes{
+	height:40px;
+	padding:8px 15px 0px 15px;
+	float:right;
+	text-align:right;
+	text-align:center;
+	color:#fff;
+	font-size:20px;
+}
+#pesquisa_clientes input{
+	border:0px;
+	width:225px;
+	padding:8px;
+	font-size:16px;
+}
+/* ---------------------------------------------------------------------- */
+/*	Layout COLULA 1 CLIENTE
+/* ---------------------------------------------------------------------- */
+#cupom_cliente{
+	float:left;
+	margin-left:40px;
+	height:41px;
+	padding:4px;
+	color:#d0dde2;
+	width:235px;
+	cursor:pointer;
+}
+#cupom_cliente:hover{
+	color:#fff;
+}
+#cupom_nome{
+	font-size:20px;
+	height:26px;
+	overflow:hidden;
+	//border:1px #000 solid;
+}
+#cupom_telefone{
+	margin-top:-30px;
+	font-size:14px;
+}
+#cupom_mesa{
+	float:right;
+	padding:11px 17px;
+	margin-right:5px;
+	cursor:pointer;
+	color:#b5c9d1;
+}
+.mesa_selecionada{
+	color:#fff;
+	text-align:center;
+	font-size:28px;
+	width:46px !important;
+	height:30px !important;
+	padding:10px 5px !important;
+}
+#cupom_mesa:hover{
+	background-color:#84a5b2;
+	color:#fff;
+}
+#cupom_pesquisar_cliente{
+	float:right;
+	padding:11px 15px;
+	cursor:pointer;
+	color:#b5c9d1;
+}
+#cupom_pesquisar_cliente:hover{
+	background-color:#84a5b2;
+	color:#fff;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Layout COLULA 1 ULTIMO PRODUTO
+/* ---------------------------------------------------------------------- */
+.produto_atual_left{
+	float:left;	
+	padding:15px 0px 15px 20px;
+}
+.produto_atual_right{
+	float:right;
+	padding:15px 20px 15px 5px;
+	text-align:right;
+}
+#cupom_quantidade{
+	color:#fff;
+}
+#cupom_descricao{
+	font-size:28px;
+	color:#ebfd86;
+	width: 270px;
+	overflow: hidden;
+	height: 34px;
+	text-transform:uppercase;
+}
+#cupom_unitario{
+	color:#fff;
+}
+#cupom_valor_unitario{
+	font-size: 28px;
+	color:#ebfd86;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Layout  PEDIDOS PRODUTOS
+/* ---------------------------------------------------------------------- */
+.lista_odd{
+	background-color:#ebeff0 !important;
+}
+
+#cupom_nota{
+	overflow:scroll;
+	overflow-x:hidden;
+}
+.cupom_produto{
+	//background-color:#e5ebec;
+	display:table;
+	width:375px;
+	padding:8px 5px 8px 10px;
+	height:34px;
+}
+.adicional_prod{
+	width:354px !important;
+	margin-left:15px !important;
+	height:20px !important;
+	padding:0px !important;
+}
+.cupom_produto_mensagem_del{
+	float:left;
+	margin-top:9px;
+	color:#b44444;
+	font-weight:bold;
+}
+.cupom_produto_conf_del{
+	cursor:pointer;
+	float:right;
+	padding:3px 5px;
+	color:#008000;
+	opacity:0.4;
+}
+.cupom_produto_conf_del:hover{
+	opacity:1;
+}
+.cupom_produto_cancel_del{
+	cursor:pointer;
+	float:right;
+	padding:3px 5px;
+	color:#b44444;
+	opacity:0.4;
+}
+.cupom_produto_cancel_del:hover{
+	opacity:1;
+}
+
+.cupom_produto_col1{
+	float:left;
+	color:#7b8a90;
+}
+.cupom_produto_quantidade{
+	font-size:12px;
+	display:none;
+}
+.cupom_produto_descricao{
+	font-size:15px;
+	font-weight:bold;
+	overflow: hidden;
+	width: 250px;
+	height: 19px;
+	text-transform:uppercase;
+	margin-top:9px;
+}
+
+.cupom_produto.adicional_prod .cupom_produto_descricao{
+	margin-top:0px !important;
+}
+
+.cupom_produto_col2{
+	float:right;
+	text-align:right;
+	margin-right:10px;
+	color:#7b8a90;
+	
+}
+.cupom_produto_unitario{
+	font-size:12px;
+}
+.cupom_produto_valor_unitario{
+	font-size:15px;
+	font-weight:bold;
+}
+
+.cupom_produto_col3{
+	float:right;
+	text-align:right;
+	margin-right:10px;
+	color:#7b8a90;
+	display:none;
+}
+.cupom_produto_total{
+	font-size:12px;
+}
+.cupom_produto_valor_total{
+	font-size:15px;
+	font-weight:bold;
+}
+
+.produto_produto_deletar{
+	cursor:pointer;
+	float:right;
+	padding:3px 5px;
+	color:#8eb0bd;
+}
+.produto_produto_deletar:hover{
+	//background-color:#fff;
+	color:#b44444;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Layout   COLULA 1 A RECEBER
+/* ---------------------------------------------------------------------- */
+.cupom_pedido_mensagem_del{
+	float:right;
+	padding:30px;
+	color:#b44444;
+	font-weight:bold;
+}
+.cupom_pedido_conf_del{
+	cursor:pointer;
+	float:left;
+	padding:15px 28px;
+	color:#008000;
+	opacity:0.4;
+}
+.cupom_pedido_conf_del:hover{
+	background-color:#84a5b2;
+	opacity:1;
+}
+.cupom_pedido_cancel_del{
+	cursor:pointer;
+	float:left;
+	padding:15px 28px;
+	color:#b44444;
+	opacity:0.4;
+}
+.cupom_pedido_cancel_del:hover{
+	background-color:#84a5b2;
+	opacity:1;
+}
+
+#cupom_cancelar{
+	cursor:pointer;
+	float:left;
+	padding:14px 5px 12px 5px;
+	width:80px;
+	color:#d1dee3;
+	text-align:center;
+	font-weight:bold;
+}
+#cupom_cancelar:hover{
+	background-color:#84a5b2;
+	color:#fff;
+}
+#cupom_espera{
+	cursor:pointer;
+	float:left;
+	padding:14px 5px 12px 5px;
+	width:80px;
+	color:#d1dee3;
+	text-align:center;
+	font-weight:bold;
+}
+#cupom_espera:hover{
+	background-color:#84a5b2;
+	color:#fff;
+}
+#cupom_receber{
+	cursor:pointer;
+	float:right;
+	padding:14px 5px 12px 5px;
+	width:80px;
+	color:#d1dee3;
+	text-align:center;
+	font-weight:bold;
+	display:none;
+}
+#cupom_receber:hover{
+	background-color:#84a5b2;
+	color:#fff;
+}
+
+#cupom_total{
+	float:right;
+	text-align:right;
+	color:#fff;
+	padding:13px 15px 5px 15px;
+	//border:1px solid #000;
+	 cursor:pointer;
+}
+#cupom_total:hover{
+	background-color:#84a5b2;
+	color:#fff;
+}
+#cupom_total span{
+	font-weight:bold;
+}
+#cupom_total p{
+	font-size:30px;
+	font-weight:bold;
+	margin:0px;
+	color:#ebfd86;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Layout MENU PRODUTOS
+/* ---------------------------------------------------------------------- */
+#menu_categorias_produtos{
+	float:left;
+}
+#menu_categorias_produtos div{
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	width:118px;
+	padding:57px 0px 7px 0px;
+	background-color:#E6E6E6;
+	font-weight:bold;
+	opacity:0.8;
+	color:#636363;
+	background-position:center top 5px;
+	background-size:50px;
+	background-repeat:no-repeat;
+}
+#menu_categorias_produtos div:hover{
+	background-color:#e6e6e6;
+	opacity:1;
+}
+#menu_lanches{
+	background-image: url(../img/icon_lanches.png);
+}
+
+#menu_bebidas{
+	background-image: url(../img/icon_bebidas.png);
+}
+#menu_porcoes{
+	background-image: url(../img/icon_porcoes.png);
+}
+#menu_kits{
+	background-image: url(../img/icon_kit.png);
+}
+#menu_adicionais{
+	background-image: url(../img/icon_adicionais.png);
+}
+#menu_entrega{
+	background-image: url(../img/icon_entrega.png);
+}
+
+.menu_select{
+	background-color:#D3D3D3 !important;
+	opacity:1 !important;
+}
+
+.produtos_itens{
+	//overflow:scroll;
+	//overflow-x:hidden;
+	padding:10px;
+	width: calc(100% - 10px);
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Layout MENU CLIENTES
+/* ---------------------------------------------------------------------- */
+#menu_clientes{
+	float:left;
+}
+#menu_clientes div{
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	width:118px;
+	padding:57px 0px 7px 0px;
+	background-color:#E5E5E5;
+	font-weight:bold;
+	opacity:0.8;
+	color:#636363;
+	background-position:center top 5px;
+	background-size:50px;
+	background-repeat:no-repeat;
+}
+#menu_clientes div:hover{
+	background-color:#e6e6e6;
+	opacity:1;
+}
+	
+#menu_clientes_listar{
+	background-image: url(../img/icon_clientes_listar.png);
+}
+
+#menu_clientes_cadastrar{
+	background-image: url(../img/icon_clientes_cadastrar.png);
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+/*	Layout Lista CLIENTES
+/* ---------------------------------------------------------------------- */
+
+.lista_clientes_tudo{
+	//border:1px solid #eee;
+	//padding-top:10px;
+	background-color:#D3D3D3;
+	color:#666;
+}
+.lista_clientes_tudo div{
+	//margin:2px;
+}
+.lista_clientes_header{
+	//text-align:center;
+	background-color:#D3D3D3;
+	//padding:10px 0px 10px 0px;
+	display:table;
+	width:calc(100%);
+	font-weight:bold;
+	
+}
+.lista_clientes_header_claro{
+	//background-color:#eeeeee;	
+}
+.lista_clientes_header div{
+	padding-left: 10px;
+}
+
+.lista_clientes_nome{
+	float:left;
+	width:22%;
+	padding:10px 5px;
+}
+.lista_clientes_telefone{
+	float:left;
+	width:108px;
+	padding:10px 0px 10px 7px;
+}
+.lista_clientes_celular{
+	float:left;
+	width:108px;
+	padding:10px 0px 10px 7px;
+}
+.lista_clientes_endereco{
+	float:left;
+	width:calc(78% - 272px);
+	padding:10px 0px 10px 9px;
+}
+.lista_clientes_endereco_header{
+	float:left;
+	width:calc(78% - 268px);
+	padding:10px 5px;
+}
+.lista_clientes_opcoes{
+	float:left;
+	width:70px;
+	padding:10px 5px;
+}
+
+.lista_clientes_itens{
+	overflow:scroll;
+	overflow-x:hidden;
+	width:100%;
+}
+.lista_cliente_item{
+	cursor:pointer;
+	//padding:5px 0px;
+	display:table;
+	width:100%;
+	background-color:#fcfcfc;
+	border-bottom:1px solid #ddd;
+}
+.lista_cliente_item:nth-child(even){
+	background-color:#F4F4F4;
+}
+.lista_cliente_item:hover{
+	background-color:#D3D3D3;
+}
+
+.lista_cliente_item div{
+	margin-left:2px;
+}
+.lista_clientes_opcoes_iserir{
+	cursor:pointer;
+	float:left;
+	width:70px;
+	padding:5px 0px 2px 10px;
+}
+.lista_clientes_opcoes_iserir:hover{
+	
+	color:#84a5b2;
+	//background-color:#aaa;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Layout EM ESPERA
+/* ---------------------------------------------------------------------- */
+.col2_row2_outro{
+	overflow:scroll;
+	overflow-x:hidden;
+	padding:10px;
+}
+
+.espera_nome_cliente{
+	padding:5px 0px;
+	font-size:16px;
+	text-align:center;
+	font-weight:bold;
+	border-bottom:1px solid #dadada;
+}
+.espera_mesa{
+	float:left;
+}
+.espera_total{
+	float:right;	
+}
+.espera_lista_itens_left{
+	float:left;
+	height:127px;
+	//width: 150px;
+	overflow: hidden;
+	margin:5px 0px 5px 5px;
+	text-transform:uppercase;
+}
+.espera_lista_itens_right{
+	float:right;
+	height:127px;
+	margin:5px 5px 5px 0px;
+	text-align:right;
+}
+.espera_titulo{
+	background-color:#fafafa;
+	padding:5px 5px 4px 5px;
+	color:#8eb0bd;
+	clear:both;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	border-top:1px solid #dadada;
+	height:22px;
+}
+.espera_item{
+	margin:0px 10px 10px 0px;
+	float:left;
+	cursor:pointer;
+	height:197px;
+	background-color:#fff;
+	border:2px solid #fff;
+	opacity:0.9;
+	position: relative;
+}
+.espera_item_editar{
+	position: absolute;
+	top: 29px;
+	width: 50%;
+	height: 94px;
+	background:#fff;
+	font-size:50px;
+	text-align:center;
+	padding-top:43px;
+	color:#9bc1cf;
+	transition:all 0.3s;
+}
+
+.espera_item_editar:hover{
+	background:#9bc1cf;
+	color:#fff;
+}
+.espera_item_chamar{
+	position: absolute;
+	top: 29px;
+	width: 50%;
+	height: 94px;
+	right: 0;
+	background:#fff;
+	font-size:50px;
+	text-align:center;
+	padding-top:43px;
+	color:#9bc1cf;
+	transition: 0.3s;
+}
+.espera_item_chamar:hover{
+	background:#9bc1cf;
+	color:#fff;
+}
+
+@media only screen and (max-width: 1299px) {
+.espera_item{
+	width:calc(33.3% - 14px);
+}
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1510px) {
+.espera_item{
+	width:calc(25% - 14px);
+}
+}
+
+@media only screen and (min-width: 1511px) and (max-width: 1760px) {
+.espera_item{
+	width:calc(20% - 14px);
+}
+}
+@media only screen and (min-width: 1761px) {
+.espera_item{
+	width:calc(16.6% - 14px);
+}
+}
+
+@media only screen and (max-width: 1000px) {
+body{
+	overflow-x:scroll;
+}
+}
+
+.espera_item:hover{
+	opacity:1;
+	//border:2px solid #8eb0bd;
+}
+/* ---------------------------------------------------------------------- */
+/*	Itens de produtos
+/* ---------------------------------------------------------------------- */
+.produto_item{
+	margin:0px 10px 10px 0px;
+	float:left;
+	cursor:pointer;
+	height:127px;
+	background-color:#fff;
+	border:2px solid #fff;
+	opacity:0.9;
+	//width: 216px;
+}
+@media only screen and (max-width: 1127px) {
+.produto_item{
+	width:calc(50% - 14px);
+}
+}
+
+@media only screen and (min-width: 1128px) and (max-width: 1357px) {
+.produto_item{
+	width:calc(33.3% - 14px);
+}
+}
+
+@media only screen and (min-width: 1358px) and (max-width: 1587px) {
+.produto_item{
+	width:calc(25% - 14px);
+}
+}
+@media only screen and (min-width: 1588px) and (max-width: 1917px) {
+.produto_item{
+	width:calc(20% - 14px);
+}
+}
+@media only screen and (min-width: 1818px) {
+.produto_item{
+	width:calc(16.6% - 14px);
+}
+}
+
+.produto_item:hover{
+	opacity:1;
+	border:2px solid #8eb0bd;
+}
+.img_produto_left{
+	float:left;
+	text-align:center;
+	width:130px;
+	height:100px;
+}
+.img_produto_left img{
+	max-width: 130px;
+	max-height: 100px;
+}
+
+.desc_produto_right{
+	float:right;
+	text-align:right;
+	margin:10px 10px 10px 0px;
+	color:#7b8a90;
+}
+.desc_produto_unitario{
+	font-size:14px;
+}
+.desc_produto_valor_unitario{
+	font-size:18px;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+.desc_produto_quantidade{
+	font-size:14px;
+}
+.nome_produto{
+	background-color:#fafafa;
+	padding:5px 5px 4px 5px;
+	color:#8eb0bd;
+	clear:both;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	border-top:1px solid #dadada;
+	text-transform:uppercase;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/*	Layout  Pedidos
+/* ---------------------------------------------------------------------- */
+#voltar_produtos{
+	cursor:pointer;
+	float:left;
+	padding:14px 5px 12px 5px;
+	width:80px;
+	color:#d1dee3;
+	text-align:center;
+	font-weight:bold;
+}
+#voltar_produtos:hover{
+	background-color:#444;
+	color:#fff;
+}
+
+#btn_pedidos_em_aberto{
+	cursor:pointer;
+	float:left;
+	padding:14px 5px 12px 5px;
+	width:80px;
+	color:#d1dee3;
+	text-align:center;
+	font-weight:bold;
+}
+#btn_pedidos_em_aberto:hover{
+	background-color:#6E7A80;
+	color:#fff;
+}
+
+.col_2_row_11 span{
+	font-size:26px;
+	color:#fff;
+	display:block;
+	padding:11px 15px;
+	float: left;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Mesas itens
+/* ---------------------------------------------------------------------- */
+.mesas_itens{
+	overflow:scroll;
+	overflow-x:hidden;
+	padding:10px;
+}
+.mesa_ocupada{
+	cursor:auto !important;
+	border:2px solid #fff  !important;
+	background-color:#fff !important;
+	opacity:0.4 !important;
+	color:#b44444 !important;
+}
+.icon_mesa{
+	float:left;
+	padding:15px 5px 15px 30px;
+}
+.nome_mesa{
+	margin-left:90px;
+	padding: 3px 5px 2px 5px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid #dadada;
+}
+.lugares_mesa{
+	margin-left:90px;
+	padding: 2px 5px 0px 5px;
+	font-size: 14px;
+	text-align: center;
+}
+.estado_mesa{
+	margin-left:90px;
+	padding: 0px 5px 0px 5px;
+	//color: #91bd8e;
+	font-size: 18px;
+	text-align: center;
+}
+
+.mesa_item{
+	margin:0px 10px 10px 0px;
+	color: #72a06f;
+	float:left;
+	cursor:pointer;
+	height:70px;
+	background-color:#fff;
+	border:2px solid #fff;
+	opacity:0.9;
+}
+@media only screen and (max-width: 1299px) {
+.mesa_item{
+	width:calc(33.3% - 14px);
+}
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1510px) {
+.mesa_item{
+	width:calc(25% - 14px);
+}
+}
+
+@media only screen and (min-width: 1511px) and (max-width: 1760px) {
+.mesa_item{
+	width:calc(20% - 14px);
+}
+}
+@media only screen and (min-width: 1761px) {
+.mesa_item{
+	width:calc(16.6% - 14px);
+}
+}
+
+.mesa_item:hover{
+	opacity:1;
+	border:2px solid #8eb0bd;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Formulario Cadastro
+/* ---------------------------------------------------------------------- */
+#formulario_cadastro_cliente_pdv{
+	overflow:scroll;
+	overflow-x:hidden;
+	padding:10px;
+	color:#666;
+}
+#formulario_cadastro_cliente_pdv p{
+	margin:5px 0px;
+}
+#formulario_cadastro_cliente_pdv label{
+	width:130px;
+	float:left;
+	text-align:right;
+	margin-top:7px;
+}
+#formulario_cadastro_cliente_pdv .field{
+	margin-left:10px;
+}
+#formulario_cadastro_cliente_pdv input{
+	padding:5px;
+}
+#formulario_cadastro_cliente_pdv .desc{
+	margin-left:150px;
+}
+#btn_cadastro_cliente_pdv{
+	cursor:pointer;
+	width:290px;
+	text-align:center;
+	margin-left:140px;
+	padding:10px;
+	background-color:#ddd;
+	border:1px solid #A9A9A9;
+	font-size:20px;
+}
+#btn_cadastro_cliente_pdv:hover{
+	color:#84a5b2;
+	background-color:#e6e6e6;
+	border:1px solid #ccc;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Fechamento do Pedido
+/* ---------------------------------------------------------------------- */
+#formas_pagamento{
+	float:left;
+}
+
+#calculo_pagamento{
+	float:left;
+}
+#formas_pagamento_titulo{
+	width:180px;
+	padding:18px 10px 17px 10px;
+	font-size:16px;
+	text-align:center;
+	background-color:#aaa;
+	color:#eee;
+}
+.formas_pagamento{
+	cursor:pointer;
+	//display:table;
+	background-color:#ddd;
+	color:#666;
+	padding:10px;
+	margin-top:1px;
+	text-align:center;
+}
+.forma_select{
+	background-color:#ccc;
+	//border:1px solid #aaa;
+	padding:9px;
+	font-weight:bold;
+}
+.formas_pagamento:hover{
+	background-color:#ccc;
+	color:#333;
+}
+#forma_dinheiro{
+}
+#forma_cartao_credito{
+}
+#forma_cartao_debito{
+}
+#forma_cheque{
+}
+#forma_outros{
+}
+
+#calculo_pagamento{
+	//margin-left:20px;
+	width:270px;
+}
+#calculo_pagamento div{
+	font-size:20px;
+}
+
+#valor_total_a_pagar{
+	font-size:26px !important;
+	padding:3px 0px 1px 0px !important;
+}
+
+#receber_total{
+	cursor:pointer;
+	background-color:#67b4d1;
+	color:#fff;
+	padding:10px 0px;
+}
+#receber_total:hover{
+	background-color:#7f9eaa;
+	color:#fff;
+}
+#devolver_troco{
+	cursor:pointer;
+	background-color:#cac028;
+	color:#fff;
+	padding:10px 0px;
+}
+#devolver_troco:hover{
+	background-color:#a7ac21;
+	color:#fff;
+}
+#fechar_caixa{
+	cursor:pointer;
+	background-color:#8cc63f;
+	color:#fff;
+	padding:10px 0px;
+}
+#fechar_caixa:hover{
+	background-color:#7db236;
+	color:#fff;
+}
+#imprimir_cozinha{
+	cursor:pointer;
+	background-color:#67b4d1;
+	color:#fff;
+	padding:10px 0px;
+}
+#imprimir_cozinha:hover{
+	background-color:#7f9eaa;
+	color:#fff;
+}
+#imprimir_senha{
+	cursor:pointer;
+	background-color:#666;
+	color:#fff;
+	padding:10px 0px;
+}
+#imprimir_senha:hover{
+	background-color:#555;
+	color:#fff;
+}
+#imprimir_cupom{
+	cursor:pointer;
+	background-color:#666;
+	color:#fff;
+	padding:10px 0px;
+}
+#imprimir_cupom:hover{
+	background-color:#555;
+	color:#fff;
+}
+
+#btn_limpar_total{
+	cursor:pointer;
+	background-color:#8eb0bd;
+	color:#fff;
+}
+#btn_limpar_total:hover{
+	background-color:#7f9eaa;
+}
+#texto_total_a_pagar{
+	background-color:#aaa;
+	color:#fff;
+	padding:15px 0px;
+}
+#texto_desconto{
+	background-color:#aaa;
+	color:#fff;
+	padding: 9px 0px 8px 0px;
+	font-size:16px !important;
+}
+#valor_total_a_pagar{
+	background-color:#aaa;
+	color:#ebfd86;
+	padding:11px 0px !important;
+}
+.btn_num{
+	cursor:pointer;
+	background-color:#8eb0bd;
+	color:#fff;
+}
+.btn_num:hover{
+	background-color:#7f9eaa;
+}
+.btn_mais{
+	cursor:pointer;
+	background-color:#87949a;
+	color:#fff;
+}
+.btn_mais:hover{
+	background-color:#7f9eaa;
+}
+
+.tam_1{
+	float:left;
+	width:66px;
+	margin:0px 1px 1px 0px;
+	padding:6px 0px;
+	text-align:center;
+}
+.tam_2{
+	float:left;
+	width:133px;
+	//margin:0px 5px 5px 0px;
+	padding:6px 0px;
+	text-align:center;
+}
+.tam_3{
+	float:left;
+	width:190px;
+	margin:0px 5px 5px 0px;
+	padding:6px 0px;
+	text-align:center;
+}
+.tam_4{
+	float:left;
+	width:267px;
+	margin:0px 5px 1px 0px;
+	padding:6px 0px;
+	text-align:center;
+}
+.input_3{
+	border:0px;
+	float:left;
+	width:180px;
+	font-size:26px;
+	margin:0px 1px 1px 0px;
+	background-color:#fff;
+	padding:3px 10px 1px 10px;
+	text-align:right;
+	color:#666;
+	font-weight:bold;
+}
+.input_2{
+	border:0px;
+	float:left;
+	width:114px;
+	font-size:18px;
+	//margin:0px 5px 5px 0px;
+	background-color:#fff;
+	padding:9px 10px 5px 10px;
+	text-align:right;
+	color:#999;
+	font-weight:bold;
+}
+
+/* ---------------------------------------------------------------------- */
+/*	Outros
+/* ---------------------------------------------------------------------- */
+.white {	
+	background: #fff;
+	position: relative;
+	border: 1px solid #ccc;
+	box-shadow: 0 3px 0 0 #ccc;
+	-moz-box-shadow: 0 3px 0 0 #ccc;
+	-webkit-box-shadow: 0 3px 0 0 #ccc;
+}
+
+#div_bloqueio{
+	z-index:99;
+	height:100%;
+	width:100%;
+	position:absolute;
+	background-color:#000;
+	opacity:0.9;
+	text-align:center;
+	display:table;
+	color:#fff;
+	font-family:arial;
+}
+#div_bloqueio p{
+	font-size:60px;
+	display:table-cell;
+	vertical-align:middle;
+	
+}
+#div_bloqueio span{
+	font-size:20px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+/*	Guiche
+/* ---------------------------------------------------------------------- */
+
+#numero_guiche{
+	font-family: DIGIFACE;
+	font-size: 600px;
+	background: #000;
+	color: #f00;
+	text-align: center;
+	position: absolute;
+	display: none;
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+
+#numero_guiche > div{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	text-align: center;
+}
+#numero_guiche > img{
+	//position:absolute;
+	//bottom:10px;
+	//right:10px;
+}
+#historico_guiche{
+	font-family: 'Futura Bk BT';
+	font-size:170px;
+	color:#f4d542;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	height:155px;
+	padding-top:15px;
+	background:#000;
+	text-align:center;
+	overflow:hidden;
+}
+#historico_guiche > p{
+	margin:-33px 0 -50px 0;
+	word-spacing: 80px;
+}
+#video_guiche{
+	position:absolute;
+	bottom:170px;
+	width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+#historico_guiche{
+	font-size:110px;
+	height:95px;
+	padding-top:30px;
+}
+#historico_guiche > p{
+	word-spacing: 50px;
+}
+#video_guiche{
+	bottom:125px;
+}
+}
+@media only screen and (max-width: 1000px) {
+#numero_guiche{
+	font-size: 500px;
+}
+}
+
+
+
+#input_video_guiche{
+	top:27px;
+	position:absolute;
+	transform:translate(-330px,0);
+	transition:all 0.2s;
+	color:#fff;
+	font-size:23px;
+	background:#000;
+	padding: 5px 20px;
+	border-radius: 20px;
+}
+#input_video_guiche > div{
+	float:left;
+	margin-top: 1px;
+	cursor:pointer;
+}
+#input_video_guiche input{
+	cursor:pointer;
+}
+
+#input_video_guiche:hover{
+	transform:translate(-20px,0);
+}
+
+#marquee{
+	position:absolute;
+	font-size:80px;
+	margin-top: -80px;
+	text-align: center;
+	width: 100%;
+	color: #f4d542;
+	background: rgba(0,0,0,0.5);
+	height: 185px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
