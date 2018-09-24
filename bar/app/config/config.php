@@ -9,7 +9,7 @@
  $x0b="\x64ef\x69ne\x64"; 
 if ( ! $x0b('BASEPATH')) exit('No direct script access allowed');
 
-$config['base_url'] = 'marcosbras.com';
+$config['base_url'] = 'http://marcosbras.com/bar_lanchonete/bar/';
 $config['index_page'] = '';
 $config['uri_protocol'] = 'AUTO';
 $config['url_suffix'] = '';
